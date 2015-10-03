@@ -1,0 +1,93 @@
+
+// Material Design Radio
+// --------------------------------------------------
+
+$radio-md-color-on:               color(primary) !default;
+
+$radio-md-icon-size:              16px !default;
+$radio-md-border-width:           2px !default;
+$radio-md-color-off:              darken($item-md-border-color, 40%) !default;
+
+$radio-md-transition-duration:    280ms !default;
+$radio-md-transition-easing:      cubic-bezier(.4, 0, .2, 1) !default;
+
+
+ion-radio {
+
+  radio-icon {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: $radio-md-icon-size;
+    height: $radio-md-icon-size;
+    margin: 0;
+    border: $radio-md-border-width solid $radio-md-color-off;
+    border-radius: 50%;
+  }
+
+  &[aria-checked=true] radio-icon {
+    border-color: $radio-md-color-on;
+  }
+
+  radio-icon:after {
+    position: absolute;
+    top: $radio-md-border-width;
+    left: $radio-md-border-width;
+    width: $radio-md-icon-size / 2;
+    height: $radio-md-icon-size / 2;
+    background: $radio-md-color-on;
+    border-radius: 50%;
+    content: '';
+    transition: transform $radio-md-transition-duration $radio-md-transition-easing;
+    transform: scale3d(0, 0, 0);
+  }
+
+  &[aria-checked=true] radio-icon:after {
+    transform: scale3d(1, 1, 1);
+  }
+
+  &[aria-checked=true] {
+    color: $radio-md-color-on;
+  }
+
+}
+
+media-radio {
+  display: block;
+  margin: $item-md-padding-media-top ($item-md-padding-right / 2) $item-md-padding-media-bottom ($item-md-padding-left / 2);
+}
+
+
+// Material Design Radio Color Mixin
+// --------------------------------------------------
+
+@mixin radio-theme-md($color-name, $color-value) {
+
+  ion-radio[#{$color-name}] {
+
+    &[aria-checked=true] radio-icon {
+      border-color: $color-value;
+    }
+
+    &[aria-checked=true] radio-icon:after {
+      background: $color-value;
+    }
+
+    &[aria-checked=true] {
+      color: $color-value;
+    }
+
+  }
+
+}
+
+
+// Generate Material Design Radio Auxiliary Colors
+// --------------------------------------------------
+
+@each $color-name, $color-value in auxiliary-colors() {
+
+  @include radio-theme-md($color-name, $color-value);
+
+}

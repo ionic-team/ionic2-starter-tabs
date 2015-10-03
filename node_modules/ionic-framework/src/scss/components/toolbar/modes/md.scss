@@ -1,0 +1,63 @@
+
+// Material Design Toolbar
+// --------------------------------------------------
+
+$toolbar-md-height:                  5.6rem !default;
+$toolbar-md-title-font-size:         2rem !default;
+$toolbar-md-button-font-size:        1.4rem !default;
+
+
+.toolbar {
+  min-height: $toolbar-md-height;
+
+  button,
+  [button],
+  button.activated,
+  [button].activated {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 5px;
+    min-height: 32px;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  button.icon-only,
+  [button].icon-only {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  button icon,
+  [button] icon {
+    padding: 0;
+    min-width: 28px;
+  }
+
+  [menu-toggle],
+  [menu-toggle].activated {
+    padding: 0 2px;
+    min-width: 44px;
+
+    icon {
+      font-size: 2.4rem;
+    }
+  }
+
+  [menu-toggle][secondary],
+  [menu-toggle][secondary].activated {
+    margin: 0 2px;
+    min-width: 28px;
+  }
+
+}
+
+ion-title {
+  padding: 0 12px;
+  font-size: $toolbar-md-title-font-size;
+  font-weight: 500;
+}
+
+ion-nav-items[primary] button:first-child {
+  margin-left: 0;
+}

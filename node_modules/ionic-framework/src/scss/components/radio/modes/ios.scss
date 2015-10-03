@@ -1,0 +1,69 @@
+
+// iOS Radio
+// --------------------------------------------------
+
+$radio-ios-color-on:       color(primary) !default;
+
+
+ion-radio {
+
+  &[aria-checked=true] radio-icon:after {
+    position: absolute;
+    border: 2px solid $radio-ios-color-on;
+    top: 3px;
+    left: 7px;
+    width: 4px;
+    height: 10px;
+    border-left: none;
+    border-top: none;
+    content: '';
+    transform: rotate(45deg);
+  }
+
+  &[aria-checked=true] {
+    color: $radio-ios-color-on;
+  }
+
+}
+
+media-radio {
+  display: block;
+  margin: $item-ios-padding-media-top ($item-ios-padding-right / 2) $item-ios-padding-media-bottom ($item-ios-padding-left / 2);
+}
+
+radio-icon {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 21px;
+}
+
+
+// iOS Radio Color Mixin
+// --------------------------------------------------
+
+@mixin radio-theme-ios($color-name, $color-value) {
+
+  ion-radio[#{$color-name}] {
+
+    &[aria-checked=true] radio-icon:after {
+      border-color: $color-value;
+    }
+
+    &[aria-checked=true] {
+      color: $color-value;
+    }
+
+  }
+
+}
+
+
+// Generate iOS Radio Auxiliary Colors
+// --------------------------------------------------
+
+@each $color-name, $color-value in auxiliary-colors() {
+
+  @include radio-theme-ios($color-name, $color-value);
+
+}

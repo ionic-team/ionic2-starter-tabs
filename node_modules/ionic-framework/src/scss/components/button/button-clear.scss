@@ -1,0 +1,41 @@
+
+// Clear Button
+// --------------------------------------------------
+
+button[clear],
+[button][clear] {
+  border-color: transparent;
+  background: transparent;
+  color: darken-or-lighten($button-color);
+
+  &.activated {
+    opacity: 0.4;
+  }
+
+  &:hover:not(.disable-hover) {
+    opacity: 0.6;
+    color: darken-or-lighten($button-color);
+  }
+}
+
+
+
+// Generate Clear Button Colors
+// --------------------------------------------------
+
+@each $color-name, $color-value in auxiliary-colors() {
+
+  $fg-color: darken-or-lighten($color-value);
+
+  button[clear][#{$color-name}],
+  [button][clear][#{$color-name}] {
+    border-color: transparent;
+    background: transparent;
+    color: $fg-color;
+
+    &:hover:not(.disable-hover) {
+      color: darken-or-lighten($fg-color);
+    }
+  }
+
+}

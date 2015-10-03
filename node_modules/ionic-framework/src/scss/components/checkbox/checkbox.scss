@@ -1,0 +1,15 @@
+
+// Checkbox
+// --------------------------------------------------
+
+
+ion-checkbox {
+  cursor: pointer;
+  @include user-select-none();
+}
+
+ion-checkbox[aria-disabled=true] {
+  pointer-events: none;
+  opacity: 0.5;
+  color: $subdued-text-color;
+}

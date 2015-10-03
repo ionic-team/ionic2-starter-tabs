@@ -1,0 +1,1 @@
+{"version":3,"file":"view_container.js","sourceRoot":"./","sources":["angular2/src/core/render/dom/view/view_container.ts"],"names":["DomViewContainer","DomViewContainer.constructor"],"mappings":"AAIA;IAAAA;QACEC,gDAAgDA;QAChDA,UAAKA,GAA8BA,EAAEA,CAACA;IACxCA,CAACA;IAADD,uBAACA;AAADA,CAACA,AAHD,IAGC;AAHY,wBAAgB,mBAG5B,CAAA"}
