@@ -14,18 +14,18 @@ $colors: (primary: #387ef5, secondary: #32db64, danger: #f53d3d, light: #f4f4f4,
 // ---------------------------------
 @import "ionic";
 
-// .platform-cordova {
-//   &.platform-ios.ios {
-//     ion-navbar {
-//       height: 100%;
-//       padding-top: 0;
-//
-//       ion-title, button {
-//         padding-top: 20px;
-//       }
-//     }
-//   }
-// }
+.platform-cordova {
+  &.platform-ios.ios {
+    ion-navbar {
+      height: 100%;
+      padding-top: 0;
+
+      ion-title, button {
+        padding-top: 20px;
+      }
+    }
+  }
+}
 
 // App Sass
 // ---------------------------------
