@@ -5,13 +5,13 @@
 </ion-navbar>
 <ion-content>
   <ion-list>
-    <ion-item *ng-for="#chat of chats" (click)="passChat(chat)">
+    <button ion-item *ng-for="#chat of chats" (click)="passChat(chat)">
       <ion-avatar item-left>
         <img [src]="chat.face" alt="">
       </ion-avatar>
       <ion-item-content>
         {{chat.name}}
       </ion-item-content>
-    </ion-item>
+    </button>
   </ion-list>
 </ion-content>
