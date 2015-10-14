@@ -29,7 +29,6 @@ gulp.task('watch', ['sass', 'fonts'], function(done) {
     gulp.start('sass');
   });
   compile(true, function(){
-    gulp.start('serve');
     done();
   });
 });

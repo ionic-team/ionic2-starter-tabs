@@ -12,9 +12,7 @@
     "typescript": "1.5.3",
     "webpack": "1.10.5"
   },
-  "dependencies": {
-    "ionic-framework": "^2.0.0-alpha.24"
-  },
+  "dependencies": {},
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",

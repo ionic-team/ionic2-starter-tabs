@@ -1,8 +1,8 @@
-import {IonicView, NavController, ViewController} from 'ionic/ionic';
+import {Page, NavController, ViewController} from 'ionic/ionic';
 import {Friends} from '../data/data';
 import {ChatDetailCtrl} from '../chat/chat';
 
-@IonicView({
+@Page({
   templateUrl: 'app/chats/chats.html'
 })
 export class ChatsCtrl {

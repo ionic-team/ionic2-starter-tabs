@@ -1,6 +1,6 @@
 ///<referenc path="../../../typings/angular2/angular2.d.ts" />
-import {IonicView, NavController, ViewController} from 'ionic/ionic';
-@IonicView({
+import {Page, NavController, ViewController, IonicConfig} from 'ionic/ionic';
+@Page({
   templateUrl: 'app/dash/dash.html',
 })
 export class DashCtrl {
@@ -9,4 +9,9 @@ export class DashCtrl {
     this.view = view;
   }
 
+  passChat(chat) {
+    this.nav.push(ChatDetailCtrl, {
+      chat: chat
+    });
+  }
 }

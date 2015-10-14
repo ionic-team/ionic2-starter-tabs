@@ -1,9 +1,9 @@
-import {IonicView} from 'ionic/ionic';
+import {Page} from 'ionic/ionic';
 import {DashCtrl} from '../dash/dash';
 import {ChatsCtrl} from '../chats/chats';
 import {AccountCtrl} from '../account/account';
 
-@IonicView({
+@Page({
   templateUrl: 'app/tabs/tabs.html',
 })
 

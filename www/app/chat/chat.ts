@@ -1,7 +1,7 @@
-import {IonicView, NavParams} from 'ionic/ionic';
+import {Page, NavParams} from 'ionic/ionic';
 import {Injectable} from "angular2/angular2";
 @Injectable()
-@IonicView({
+@Page({
   templateUrl: 'app/chat/chat.html'
 })
 
