@@ -4,7 +4,7 @@ import {Friends} from './data/data';
 
 @App({
   template: `<ion-nav [root]="root"></ion-nav>`,
-  bindings: [Friends],
+  providers: [Friends],
 })
 
 class MyApp {
