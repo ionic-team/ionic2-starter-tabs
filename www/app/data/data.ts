@@ -33,4 +33,8 @@ export class Friends {
   all(){
     return this.chats
   }
+
+  remove(chat){
+     this.chats.splice(this.chats.indexOf(chat), 1);
+  }
 }

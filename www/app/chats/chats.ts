@@ -9,14 +9,16 @@ export class ChatsCtrl {
   constructor(friends: Friends, nav: NavController, view: ViewController) {
     this.nav = nav;
     this.view = view;
-    this.chats = friends.all();
-
-
+    this.friends = friends;
+    this.chats = this.friends.all();
   }
-
   passChat(chat) {
     this.nav.push(ChatDetailCtrl, {
       chat: chat
     });
   }
+  remove(chat) {
+    this.friends.remove(chat)
+  }
+
 }
