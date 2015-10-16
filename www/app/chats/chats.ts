@@ -1,4 +1,4 @@
-import {Page, NavController, ViewController} from 'ionic/ionic';
+import {Page, NavController} from 'ionic/ionic';
 import {Friends} from '../data/data';
 import {ChatDetailCtrl} from '../chat/chat';
 
@@ -6,9 +6,8 @@ import {ChatDetailCtrl} from '../chat/chat';
   templateUrl: 'app/chats/chats.html'
 })
 export class ChatsCtrl {
-  constructor(friends: Friends, nav: NavController, view: ViewController) {
+  constructor(friends: Friends, nav: NavController) {
     this.nav = nav;
-    this.view = view;
     this.friends = friends;
     this.chats = this.friends.all();
   }

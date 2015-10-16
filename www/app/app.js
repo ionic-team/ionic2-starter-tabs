@@ -1,14 +1,18 @@
-import {App, IonicApp, IonicPlatform, IonicConfig} from 'ionic/ionic';
-import {TabsPage} from './tabs/tabs';
+import {App} from 'ionic/ionic';
+import {DashCtrl} from './dash/dash';
+import {ChatsCtrl} from './chats/chats';
+import {AccountCtrl} from './account/account';
 import {Friends} from './data/data';
-
 @App({
-  template: `<ion-nav [root]="root"></ion-nav>`,
-  providers: [Friends],
+  templateUrl: 'app/app.html',
+  providers: [Friends]
 })
 
-class MyApp {
-  constructor(app: IonicApp, platform: IonicPlatform) {
-    this.root = TabsPage;
+export class TabsPage {
+  constructor() {
+    this.DashRoot = DashCtrl;
+    this.ChatsRoot = ChatsCtrl;
+    this.AccountRoot = AccountCtrl;
   }
 }
+
