@@ -6,9 +6,9 @@
 <ion-content>
   <ion-list>
     <ion-item-sliding *ng-for="#chat of chats" (click)="passChat(chat)">
-    <ion-avatar item-left>
-      <img [src]="chat.face" alt="">
-    </ion-avatar>
+      <ion-avatar item-left>
+        <img [src]="chat.face" alt="">
+      </ion-avatar>
       {{chat.name}}
       <ion-item-options>
         <button danger (click)="remove(chat)">Delete</button>

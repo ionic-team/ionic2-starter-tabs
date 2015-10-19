@@ -5,9 +5,9 @@
     "module": "commonjs",
     "sourceMap": true,
     "isolatedModules": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "noEmitOnError": false,
-    "rootDir": "."
+    "rootDir": ".",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   }
 }
