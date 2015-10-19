@@ -3,7 +3,7 @@ import {Page, NavController, ViewController} from 'ionic/ionic';
 @Page({
   templateUrl: 'app/dash/dash.html',
 })
-export class DashCtrl {
+export class Dash {
   constructor(nav: NavController, view: ViewController) {
     this.nav = nav;
     this.view = view;

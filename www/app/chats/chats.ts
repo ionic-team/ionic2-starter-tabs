@@ -5,7 +5,7 @@ import {ChatDetailCtrl} from '../chat/chat';
 @Page({
   templateUrl: 'app/chats/chats.html'
 })
-export class ChatsCtrl {
+export class Chats {
   constructor(friends: Friends, nav: NavController, view: ViewController) {
     this.nav = nav;
     this.view = view;

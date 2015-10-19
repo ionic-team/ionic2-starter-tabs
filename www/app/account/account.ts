@@ -5,7 +5,7 @@ import {Control, ControlGroup} from 'angular2/angular2';
 @Page({
   templateUrl:'app/account/account.html',
 })
-export class AccountCtrl {
+export class Account {
   constructor(friends:Friends){
     this.settings = new ControlGroup({
       enableFriends: new Control(true)

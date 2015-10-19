@@ -5,7 +5,7 @@ import {Injectable} from "angular2/angular2";
   templateUrl: 'app/chat/chat.html'
 })
 
-export class ChatDetailCtrl {
+export class ChatDetail {
    constructor(params: NavParams) {
     this.chat = params.get('chat');
    }
