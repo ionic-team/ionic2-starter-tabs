@@ -1,6 +1,6 @@
 import {Page, NavController, ViewController} from 'ionic/ionic';
 import {Friends} from '../data/data';
-import {ChatDetailCtrl} from '../chat/chat';
+import {ChatDetail} from '../chat/chat';
 
 @Page({
   templateUrl: 'app/chats/chats.html'
@@ -13,7 +13,7 @@ export class Chats {
     this.chats = this.friends.all();
   }
   passChat(chat) {
-    this.nav.push(ChatDetailCtrl, {
+    this.nav.push(ChatDetail, {
       chat: chat
     });
   }
