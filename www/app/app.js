@@ -1,10 +1,9 @@
 import {App, Platform, StatusBar} from 'ionic/ionic';
-import {DashCtrl} from './dash/dash';
-import {ChatsCtrl} from './chats/chats';
-import {AccountCtrl} from './account/account';
+import {TabsPage} from './tabs/tabs';
 import {Friends} from './data/data';
+
 @App({
-  templateUrl: 'app/app.html',
+  template: '<ion-nav [root]="root"></ion-nav>',
   providers: [Friends]
 })
 
@@ -12,9 +11,7 @@ export class TabsPage {
   constructor(platform: Platform) {
     this.platform = platform;
     this.initializeApp();
-    this.DashRoot = DashCtrl;
-    this.ChatsRoot = ChatsCtrl;
-    this.AccountRoot = AccountCtrl;
+    this.root = TabsPage;
   }
 
   initializeApp() {
@@ -24,4 +21,3 @@ export class TabsPage {
     });
   }
 }
-
