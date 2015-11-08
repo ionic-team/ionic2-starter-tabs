@@ -7,7 +7,7 @@ import {Friends} from './data/data';
   providers: [Friends]
 })
 
-export class TabsPage {
+class MyApp {
   constructor(platform: Platform) {
     this.platform = platform;
     this.initializeApp();
