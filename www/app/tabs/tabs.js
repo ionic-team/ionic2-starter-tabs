@@ -6,7 +6,6 @@ import {Account} from '../account/account';
 @Page({
   templateUrl: 'app/tabs/tabs.html',
 })
-
 export class TabsPage {
   constructor() {
     this.DashRoot = Dash;

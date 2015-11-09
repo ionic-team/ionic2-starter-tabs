@@ -6,19 +6,19 @@ import {ChatDetail} from '../chat/chat';
   templateUrl: 'app/chats/chats.html'
 })
 export class Chats {
-  constructor(friends: Friends, nav: NavController, view: ViewController) {
+  constructor(friends: Friends, nav: NavController) {
     this.nav = nav;
-    this.view = view;
     this.friends = friends;
-    this.chats = this.friends.all();
+    this.chats = this.friends.chats;
   }
+
   passChat(chat) {
     this.nav.push(ChatDetail, {
       chat: chat
     });
   }
+
   remove(chat) {
     this.friends.remove(chat)
   }
-
 }

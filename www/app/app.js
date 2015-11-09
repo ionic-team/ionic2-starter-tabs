@@ -6,15 +6,11 @@ import {Friends} from './data/data';
   template: '<ion-nav [root]="root"></ion-nav>',
   providers: [Friends]
 })
-
 export class TabsPage {
   constructor(platform: Platform) {
     this.platform = platform;
-    this.initializeApp();
     this.root = TabsPage;
-  }
 
-  initializeApp() {
     this.platform.ready().then(() => {
       console.log('Platform ready');
       StatusBar.setStyle(StatusBar.DEFAULT);
