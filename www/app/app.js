@@ -1,6 +1,7 @@
 import {App, Platform, StatusBar} from 'ionic/ionic';
 import {TabsPage} from './tabs/tabs';
 import {Friends} from './data/data';
+import './app.scss';
 
 @App({
   template: '<ion-nav [root]="root"></ion-nav>',
