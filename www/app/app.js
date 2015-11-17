@@ -13,8 +13,7 @@ export class TabsPage {
     this.root = TabsPage;
 
     this.platform.ready().then(() => {
-      console.log('Platform ready');
-      StatusBar.setStyle(StatusBar.DEFAULT);
+      // Do any necessary cordova or native calls here now that the platform is ready
     });
   }
 }
