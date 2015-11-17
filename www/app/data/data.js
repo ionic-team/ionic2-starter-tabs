@@ -24,7 +24,7 @@ export class Friends {
       id: 4,
       name: 'Mike Harrington',
       lastText: 'This is wicked good ice cream.',
-      face: 'https://pbs.twimg.com/profile_images/578237281384841216/R3ae1n61.png'
+      face: 'https://pbs.twimg.com/profile_images/662469147658465280/3MRAa-aY.jpg'
     }];
   }
 
