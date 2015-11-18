@@ -1,18 +1,23 @@
-import {App, Platform, StatusBar} from 'ionic/ionic';
-import {TabsPage} from './tabs/tabs';
-import {Friends} from './data/data';
+import {App, Platform} from 'ionic/ionic';
+import {Page1} from './page1';
+import {Page2} from './page2';
+import {Page3} from './page3';
 import './app.scss';
 
-@App({
-  template: '<ion-nav [root]="root"></ion-nav>',
-  providers: [Friends]
-})
-export class TabsPage {
-  constructor(platform: Platform) {
-    this.platform = platform;
-    this.root = TabsPage;
 
-    this.platform.ready().then(() => {
+@App({
+  templateUrl: 'app.html'
+})
+export class MyApp {
+  constructor(platform: Platform) {
+
+    // this tells the tabs component which Pages
+    // should be each tab's root Page
+    this.tab1Root = Page1;
+    this.tab2Root = Page2;
+    this.tab3Root = Page3;
+
+    platform.ready().then(() => {
       // Do any necessary cordova or native calls here now that the platform is ready
     });
   }
