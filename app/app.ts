@@ -1,11 +1,11 @@
 import {App, Platform} from 'ionic-framework/ionic';
-import {Page1} from './page1/page1';
-import {Page2} from './page2/page2';
-import {Page3} from './page3/page3';
+import {Page1} from './pages/page1/page1';
+import {Page2} from './pages/page2/page2';
+import {Page3} from './pages/page3/page3';
 
 
 @App({
-  templateUrl: 'app/app.html'
+  templateUrl: 'build/app.html'
 })
 export class MyApp {
   constructor(platform: Platform) {
