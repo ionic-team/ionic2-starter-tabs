@@ -8,6 +8,11 @@ import {Page3} from './pages/page3/page3';
   templateUrl: 'build/app.html'
 })
 export class MyApp {
+  
+  tab1Root: Object;
+  tab2Root: Object;
+  tab3Root: Object;
+  
   constructor(platform: Platform) {
 
     // this tells the tabs component which Pages
