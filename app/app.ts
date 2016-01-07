@@ -1,11 +1,14 @@
-import {App, Platform} from 'ionic-framework/ionic';
+import {App, Platform, Config} from 'ionic-framework/ionic';
 import {Page1} from './pages/page1/page1';
 import {Page2} from './pages/page2/page2';
 import {Page3} from './pages/page3/page3';
 
 
 @App({
-  templateUrl: 'build/app.html'
+  templateUrl: 'build/app.html',
+  // Check out the config API docs for more info
+  // http://ionicframework.com/docs/v2/api/config/Config/
+  config: {}
 })
 export class MyApp {
   constructor(platform: Platform) {
