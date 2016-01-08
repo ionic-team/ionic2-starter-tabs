@@ -1,3 +1,4 @@
+import {Page} from 'ionic-framework/ionic';
 import {Page1} from '../page1/page1';
 import {Page2} from '../page2/page2';
 import {Page3} from '../page3/page3';
@@ -5,8 +6,6 @@ import {Page3} from '../page3/page3';
 
 @Page({
   templateUrl: 'build/pages/tabs/tabs.html'
-  // Check out the config API docs for more info
-  // http://ionicframework.com/docs/v2/api/config/Config/
 })
 export class TabsPage {
   constructor() {
