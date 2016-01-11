@@ -8,6 +8,11 @@ import {TabsPage} from './pages/tabs/tabs';
   config: {}
 })
 export class MyApp {
+  
+  tab1Root: Object;
+  tab2Root: Object;
+  tab3Root: Object;
+  
   constructor(platform: Platform) {
     this.root = TabsPage;
 
