@@ -2,7 +2,7 @@ import {App, Platform, Config} from 'ionic-framework/ionic';
 import {TabsPage} from './pages/tabs/tabs';
 
 @App({
-  template: '<ion-nav id="nav" [root]="root" #content></ion-nav>'
+  template: '<ion-nav id="nav" [root]="root" #content></ion-nav>',
   // Check out the config API docs for more info
   // http://ionicframework.com/docs/v2/api/config/Config/
   config: {}
