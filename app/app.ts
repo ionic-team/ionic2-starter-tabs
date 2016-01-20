@@ -7,9 +7,7 @@ import {Type} from 'angular2/core';
 
 @App({
   template: '<ion-nav id="nav" [root]="root" #content></ion-nav>',
-  // Check out the config API docs for more info
-  // http://ionicframework.com/docs/v2/api/config/Config/
-  config: {}
+  config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 export class MyApp {
   root: Type = TabsPage;
