@@ -8,7 +8,7 @@ import {TabsPage} from './pages/tabs/tabs';
 })
 export class MyApp {
   constructor(platform: Platform) {
-    this.root = TabsPage;
+    this.rootPage = TabsPage;
 
     platform.ready().then(() => {
       // The platform is now ready. Note: if this callback fails to fire, follow
