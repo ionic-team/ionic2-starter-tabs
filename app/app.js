@@ -1,4 +1,4 @@
-import {App, Platform} from 'ionic/ionic';
+import {App, Platform} from 'ionic-framework/ionic';
 import {Inject} from 'angular2/core';
 import {TabsPage} from './pages/tabs/tabs';
 
