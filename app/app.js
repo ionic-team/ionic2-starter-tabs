@@ -1,4 +1,5 @@
 import {App, Platform} from 'ionic/ionic';
+import {Inject} from 'angular2/core';
 import {TabsPage} from './pages/tabs/tabs';
 
 
@@ -7,7 +8,7 @@ import {TabsPage} from './pages/tabs/tabs';
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 export class MyApp {
-  constructor(platform: Platform) {
+  constructor(@Inject(Platform) platform) {
     this.rootPage = TabsPage;
 
     platform.ready().then(() => {
