@@ -16,8 +16,4 @@ export class TabsPage {
   tab1Root: Type = Page1;
   tab2Root: Type = Page2;
   tab3Root: Type = Page3;
-
-  constructor() {
-
-  }
 }
