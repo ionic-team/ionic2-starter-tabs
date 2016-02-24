@@ -7,10 +7,10 @@ import {TabsPage} from './pages/tabs/tabs';
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 export class MyApp {
-  static get parameters(){
+  static get parameters() {
     return [[Platform]];
   }
-  
+
   constructor(platform) {
     this.rootPage = TabsPage;
 
