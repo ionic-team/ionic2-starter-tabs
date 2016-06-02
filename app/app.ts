@@ -5,8 +5,7 @@ import {TabsPage} from './pages/tabs/tabs';
 
 
 @Component({
-  template: '<ion-nav [root]="rootPage"></ion-nav>',
-  config: {} // http://ionicframework.com/docs/v2/api/config/Config/
+  template: '<ion-nav [root]="rootPage"></ion-nav>'
 })
 export class MyApp {
   rootPage: any = TabsPage;
