@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {NavController, NavParams} from 'ionic-angular';
+import { Component } from '@angular/core';
+import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   templateUrl: 'build/pages/selected-fact-page/selected-fact-page.html'
@@ -9,16 +9,16 @@ export class SelectedFactPage {
     return [[NavController], [NavParams]];
   }
 
-  constructor(_navController, _navParams) {
-    this._navController = _navController;
-    this._navParams = _navParams;
+  constructor(navController, navParams) {
+    this.navController = navController;
+    this.navParams = navParams;
   }
 
   ionViewWillEnter(){
-    this.fact = this._navParams.data.selectedFact;
+    this.fact = this.navParams.data.selectedFact;
   }
 
   goBack(){
-    this._navController.pop();
+    this.navController.pop();
   }
 }

@@ -1,5 +1,5 @@
-import {Component} from '@angular/core';
-import {NavController} from 'ionic-angular';
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
 
 @Component({
   templateUrl: 'build/pages/about-page/about-page.html'
@@ -9,7 +9,7 @@ export class AboutPage {
     return [[NavController]];
   }
 
-  constructor(_navController) {
-    this._navControler = _navController;
+  constructor(navController) {
+    this.navControler = navController;
   }
 }
