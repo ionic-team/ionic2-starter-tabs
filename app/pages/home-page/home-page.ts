@@ -6,12 +6,7 @@ import {ScientificFactsPage} from '../scientific-facts-page/scientific-facts-pag
   templateUrl: 'build/pages/home-page/home-page.html'
 })
 export class HomePage {
-  static get parameters() {
-    return [[NavController]];
-  }
-
-  constructor(_navController) {
-    this._navController = _navController;
+  constructor(private _navController: NavController) {
   }
 
   goToFactsPage(){

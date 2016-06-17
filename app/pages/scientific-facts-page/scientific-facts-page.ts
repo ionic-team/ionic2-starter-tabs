@@ -6,12 +6,9 @@ import {SelectedFactPage} from '../selected-fact-page/selected-fact-page';
   templateUrl: 'build/pages/scientific-facts-page/scientific-facts-page.html'
 })
 export class ScientificFactsPage {
-  static get parameters() {
-    return [[NavController]];
-  }
 
-  constructor(_navController) {
-    this._navController = _navController;
+  private facts: string[];
+  constructor(private _navController: NavController) {
   }
 
   ionViewWillEnter(){

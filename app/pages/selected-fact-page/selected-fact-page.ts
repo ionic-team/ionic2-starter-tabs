@@ -5,13 +5,10 @@ import {NavController, NavParams} from 'ionic-angular';
   templateUrl: 'build/pages/selected-fact-page/selected-fact-page.html'
 })
 export class SelectedFactPage {
-  static get parameters() {
-    return [[NavController], [NavParams]];
-  }
 
-  constructor(_navController, _navParams) {
-    this._navController = _navController;
-    this._navParams = _navParams;
+  private fact:string;
+  
+  constructor(private _navController: NavController, private _navParams: NavParams) {
   }
 
   ionViewWillEnter(){

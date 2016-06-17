@@ -5,11 +5,6 @@ import {NavController} from 'ionic-angular';
   templateUrl: 'build/pages/about-page/about-page.html'
 })
 export class AboutPage {
-  static get parameters() {
-    return [[NavController]];
-  }
-
-  constructor(_navController) {
-    this._navControler = _navController;
+  constructor(private navController: NavController) {
   }
 }
