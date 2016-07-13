@@ -9,9 +9,9 @@ import {TabsPage} from './pages/tabs/tabs';
 })
 export class MyApp {
 
-  private rootPage:any;
+  private rootPage: any;
 
-  constructor(private platform:Platform) {
+  constructor(private platform: Platform) {
     this.rootPage = TabsPage;
 
     platform.ready().then(() => {
@@ -22,4 +22,4 @@ export class MyApp {
   }
 }
 
-ionicBootstrap(MyApp)
+ionicBootstrap(MyApp);
