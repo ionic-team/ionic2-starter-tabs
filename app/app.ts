@@ -9,10 +9,9 @@ import {TabsPage} from './pages/tabs/tabs';
 })
 export class MyApp {
 
-  public rootPage: any;
+  public rootPage = TabsPage;
 
   constructor(public platform: Platform) {
-    this.rootPage = TabsPage;
 
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
