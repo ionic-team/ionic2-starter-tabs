@@ -9,9 +9,9 @@ import {TabsPage} from './pages/tabs/tabs';
 })
 export class MyApp {
 
-  private rootPage: any;
+  public rootPage: any;
 
-  constructor(private platform: Platform) {
+  constructor(public platform: Platform) {
     this.rootPage = TabsPage;
 
     platform.ready().then(() => {
