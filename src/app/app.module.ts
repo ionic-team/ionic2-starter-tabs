@@ -24,6 +24,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     ContactPage,
     HomePage,
     TabsPage
-  ]
+  ],
+  providers: []
 })
 export class AppModule {}
