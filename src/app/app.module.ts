@@ -6,25 +6,38 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+let pages = [
+  MyApp,
+  AboutPage,
+  ContactPage,
+  HomePage,
+  TabsPage
+];
+
+export function declarations() {
+  return pages;
+}
+
+export function entryComponents() {
+  return pages;
+}
+
+export function providers() {
+  return [ 
+    {
+      provide: ErrorHandler, 
+      useClass: IonicErrorHandler
+    }
+  ];
+}
+
 @NgModule({
-  declarations: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
+  declarations: declarations(),
   imports: [
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  entryComponents: entryComponents(),
+  providers: providers()
 })
 export class AppModule {}
