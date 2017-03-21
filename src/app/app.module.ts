@@ -8,6 +8,9 @@ import { ContactPageModule } from '../pages/contact/contact.module';
 import { HomePageModule } from '../pages/home/home.module';
 import { TabsPageModule } from '../pages/tabs/tabs.module';
 
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
 @NgModule({
   declarations: [
     MyApp
@@ -24,6 +27,10 @@ import { TabsPageModule } from '../pages/tabs/tabs.module';
   entryComponents: [
     MyApp
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    StatusBar,
+    SplashScreen,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
 })
 export class AppModule {}
