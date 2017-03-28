@@ -1,4 +1,6 @@
-import { Component, IonicPage } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { IonicPage } from 'ionic-angular';
 
 @IonicPage()
 @Component({
