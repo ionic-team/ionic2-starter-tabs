@@ -9,9 +9,6 @@ import { AboutPage } from './about';
   ],
   imports: [
     IonicPageModule.forChild(AboutPage),
-  ],
-  entryComponents: [
-    AboutPage,
   ]
 })
 export class AboutPageModule {}

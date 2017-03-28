@@ -9,9 +9,6 @@ import { ContactPage } from './contact';
   ],
   imports: [
     IonicPageModule.forChild(ContactPage),
-  ],
-  entryComponents: [
-    ContactPage,
   ]
 })
 export class ContactPageModule {}
