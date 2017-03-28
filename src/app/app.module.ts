@@ -17,7 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     IonicModule.forRoot(MyApp),
     TabsPageModule
   ],
-  bootstrap: [IonicApp]
+  bootstrap: [IonicApp],
   providers: [
     StatusBar,
     SplashScreen,

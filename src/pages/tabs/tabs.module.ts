@@ -11,9 +11,6 @@ import { TabsPage } from './tabs';
   imports: [
     HomePageModule,
     IonicPageModule.forChild(TabsPage),
-  ],
-  entryComponents: [
-    TabsPage,
   ]
 })
 export class TabsPageModule {}
