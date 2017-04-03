@@ -24,6 +24,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp,
+    AboutPage,
+    ContactPage,
+    HomePage,
+    TabsPage
+  ],
   providers: [
     StatusBar,
     SplashScreen,
