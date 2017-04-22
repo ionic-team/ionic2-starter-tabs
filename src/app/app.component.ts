@@ -11,7 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 export class MyApp {
   rootPage: any = TabsPage;
 
-  constructor(private platform: Platform, private statusBar: StatusBar, private splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
   }
 
